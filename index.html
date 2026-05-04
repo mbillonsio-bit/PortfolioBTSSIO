@@ -21,6 +21,7 @@
   <span class="nav-logo">&nbsp;M.B.</span>
   <div class="nav-links">
     <a href="#projets">Projets</a>
+    <a href="#experience">Expérience</a>
     <a href="#apropos">À propos</a>
   </div>
 </nav>
@@ -30,7 +31,6 @@
   <div>
     <span class="hero-tag">Portfolio — 2026</span>
     <h1 class="hero-name">Maxence<br><em>BILLON</em></h1>
-    <!-- ── DIPLOMA ── -->
     <p class="hero-diploma">
       <span class="hero-line"></span>
       Étudiant BTS SIO Option SLAM · Lycée Sidoine Apollinaire
@@ -46,152 +46,321 @@
   </div>
 </section>
 
+<!-- ═══ MON EXPÉRIENCE ═══ -->
+<section id="experience">
+  <div class="reveal">
+    <h2 class="section-title">Mon expérience</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="timeline-track reveal">
+    <div class="timeline-spine"></div>
+    <div class="timeline-items">
+
+      <div class="timeline-node reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <p class="project-tag">Formation · BTS SIO</p>
+          <h3 class="timeline-title">1ère année BTS SIO SLAM</h3>
+          <span class="timeline-period">Sept. 2024 — Juin 2025</span>
+        </div>
+      </div>
+
+      <div class="timeline-node reveal reveal-delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <p class="project-tag">Stage · Rotin Design</p>
+          <h3 class="timeline-title">Stage de fin de 1ère année</h3>
+          <span class="timeline-period">Été 2025</span>
+        </div>
+      </div>
+
+      <div class="timeline-node reveal reveal-delay-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <p class="project-tag">Formation · BTS SIO</p>
+          <h3 class="timeline-title">2ème année BTS SIO SLAM</h3>
+          <span class="timeline-period">Sept. 2025 — Juin 2026</span>
+        </div>
+      </div>
+
+      <div class="timeline-node reveal reveal-delay-1">
+        <div class="timeline-dot timeline"></div>
+        <div class="timeline-card timeline">
+          <p class="project-tag">Stage · Académie de police</p>
+          <h3 class="timeline-title">Stage de fin de 2ème année</h3>
+          <span class="timeline-period">Printemps 2026</span>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
 <!-- ═══ PROJETS ═══ -->
 <section id="projets">
   <div class="reveal">
-    <h2 class="section-title">Mes<br>réalisations</h2>
+    <h2 class="section-title">Mes réalisations</h2>
     <div class="section-divider"></div>
   </div>
 
   <!--
     ╔══════════════════════════════════════════════════════════════════╗
     ║  ZONE D'ÉDITION — PROJETS                                       ║
-    ║  Duplique un .project-card pour ajouter un projet.              ║
-    ║  Remplace .project-img-placeholder par une vraie <img src="">.  ║
+    ║  Langages    → ajoute/retire des <span class="lang-badge">      ║
+    ║  Compétences → ajoute/retire des <span class="comp-badge">      ║
+    ║    comp-num  → petit carré contenant le numéro de compétence    ║
     ╚══════════════════════════════════════════════════════════════════╝
   -->
   <div class="projects-scroll-wrapper">
     <div class="projects-grid">
 
-      <div class="project-card reveal reveal-delay-1">
-        <!-- Option A — image réelle : <img src="mon-image.jpg" alt="…" class="project-img"> -->
-        <!-- Option B — placeholder icône (ci-dessous) -->
+      <!-- ── Projet 1 ── -->
+      <div class="project-card reveal reveal-delay-1" style="cursor:pointer"
+           data-title="Projet GLPI"
+           data-tag="GLPI · 2025"
+           data-desc="Gestion du parc informatique."
+           data-images="img/Site.png">
         <div class="project-img-placeholder">
           <i class="bi bi-grid-3x3-gap"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">GLPI · 2025</p>
           <h3 class="project-title">Projet GLPI</h3>
-          <p class="project-desc">
-            Gestion du parc informatique.
-          </p>
+          <p class="project-desc">Gestion du parc informatique.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-php"></i> GLPI</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">GPI</span> Gèrer le patrimoine informatique</span>
+            <span class="comp-badge"><span class="comp-num">ODP</span> Organiser son développement professionnel</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-2">
+      <!-- ── Projet 2 ── -->
+      <div class="project-card reveal reveal-delay-2"
+           data-title="Offre de formation"
+           data-tag="Web · 2026"
+           data-desc="Mise en place d'un catalogue de formations accessible via un site web, permettant de rechercher les formations selon différents critères et d'afficher les résultats sous forme de liste, avec la possibilité de consulter les détails d'une formation sélectionnée."
+           data-images="img/Site.png">
         <div class="project-img-placeholder">
-           <img class="img-fluid" src="img/Site.png" alt="Siteweb Catalogue Formation">
+          <img class="img-fluid" src="img/Site.png" alt="Siteweb Catalogue Formation">
         </div>
         <div class="project-body">
           <p class="project-tag">Web · 2026</p>
           <h3 class="project-title">Offre de formation</h3>
-          <p class="project-desc">
-            Mise en place d’un catalogue de formations accessible via un site web, permettant de rechercher les formations selon différents critères et d’afficher les résultats sous forme de liste, avec la possibilité de consulter les détails d’une formation sélectionnée.
-          </p>
+          <p class="project-desc">Mise en place d'un catalogue de formations accessible via un site web, permettant de rechercher les formations selon différents critères et d'afficher les résultats sous forme de liste, avec la possibilité de consulter les détails d'une formation sélectionnée.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-html"></i> HTML</span>
+            <span class="lang-badge"><i class="bi bi-filetype-css"></i> CSS</span>
+            <span class="lang-badge"><i class="bi bi-filetype-php"></i> PHP</span>
+            <span class="lang-badge"><i class="bi bi-filetype-sql"></i> SQL</span>
+            <span class="lang-badge"><i class="bi bi-filetype-sql"></i> JavaScript</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">GPI</span> Gèrer le patrimoine informatique</span>
+            <span class="comp-badge"><span class="comp-num">DPLO</span> Développer la présence en ligne de l’organisation</span>
+            <span class="comp-badge"><span class="comp-num">TMP</span> Travailler en mode projet</span>
+            <span class="comp-badge"><span class="comp-num">MDUS</span> Mettre à disposition des utilisateurs un service informatique</span>
+            <span class="comp-badge"><span class="comp-num">ODP</span> Organiser son développement professionnel</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-3">
+      <!-- ── Projet 3 ── -->
+      <div class="project-card reveal reveal-delay-3"
+           data-title="Site BloomSpirit"
+           data-tag="Web · 2025 - 2026"
+           data-desc="Site web qui référence des excursions au Japon. Développement d'une interface soignée permettant la navigation entre différentes excursions avec galerie photos et informations détaillées."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-cpu"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Web · 2025 - 2026</p>
           <h3 class="project-title">Site BloomSpirit</h3>
-          <p class="project-desc">
-            Site web qui référence des excursions au Japon.
-          </p>
+          <p class="project-desc">Site web qui référence des excursions au Japon.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-html"></i> HTML</span>
+            <span class="lang-badge"><i class="bi bi-filetype-css"></i> CSS</span>
+            <span class="lang-badge"><i class="bi bi-filetype-php"></i> PHP</span>
+            <span class="lang-badge"><i class="bi bi-filetype-sql"></i> SQL</span>
+            <span class="lang-badge"><i class="bi bi-filetype-js"></i> JavaScript</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">GPI</span> Gèrer le patrimoine informatique</span>
+            <span class="comp-badge"><span class="comp-num">DPLO</span> Développer la présence en ligne de l’organisation</span>
+            <span class="comp-badge"><span class="comp-num">TMP</span> Travailler en mode projet</span>
+            <span class="comp-badge"><span class="comp-num">MDUS</span> Mettre à disposition des utilisateurs un service informatique</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-1">
+      <!-- ── Projet 4 ── -->
+      <div class="project-card reveal reveal-delay-1"
+           data-title="ProjetGSB"
+           data-tag="Logiciel · 2026"
+           data-desc="Mise en place d'une application de gestion de médicaments pour le laboratoire GSB. L'application permet de gérer les médicaments, les visiteurs médicaux et leurs rapports de visite."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-shield-lock"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Logiciel · 2026</p>
           <h3 class="project-title">ProjetGSB</h3>
-          <p class="project-desc">
-             Mise en place d'une application de gestion de médicaments
-          </p>
+          <p class="project-desc">Mise en place d'une application de gestion de médicaments.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-java"></i> C#</span>
+            <span class="lang-badge"><i class="bi bi-filetype-sql"></i> SQL</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">GPI</span> Gèrer le patrimoine informatique</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-2">
+      <!-- ── Projet 5 ── -->
+      <div class="project-card reveal reveal-delay-2"
+           data-title="APSportSIO"
+           data-tag="Logiciel · 2025"
+           data-desc="Application de gestion de sports et sportifs. Permet de gérer des athlètes, leurs disciplines sportives, leurs performances et les compétitions auxquelles ils participent."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-bar-chart-line"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Logiciel · 2025</p>
           <h3 class="project-title">APSportSIO</h3>
-          <p class="project-desc">
-             Application de gestion de sports et sportifs
-          </p>
+          <p class="project-desc">Application de gestion de sports et sportifs.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-java"></i> C#</span>
+            <span class="lang-badge"><i class="bi bi-filetype-sql"></i> SQL</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">GPI</span> Gèrer le patrimoine informatique</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-3">
+      <!-- ── Projet 6 ── -->
+      <div class="project-card reveal reveal-delay-3"
+           data-title="AP Jeux"
+           data-tag="Logiciel · 2025"
+           data-desc="Maintenance et correction d'applications de jeux : pendu, morpion et mastermind. Analyse du code existant, identification et correction des bugs, amélioration des fonctionnalités."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-cloud-upload"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Logiciel · 2025</p>
           <h3 class="project-title">AP Jeux</h3>
-          <p class="project-desc">
-            Maintenance et correction d’applications de jeux : pendu, morpion et mastermind.
-          </p>
+          <p class="project-desc">Maintenance et correction d'applications de jeux : pendu, morpion et mastermind.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-java"></i> C#</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">RIDAE</span> Répondre aux incidents et aux demandes d’assistance et d’évolution</span>
+            <span class="comp-badge"><span class="comp-num">TMP</span> Travailler en mode projet</span>
+            <span class="comp-badge"><span class="comp-num">MDUS</span> Mettre à disposition des utilisateurs un service informatique</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-1">
+      <!-- ── Projet 7 ── -->
+      <div class="project-card reveal reveal-delay-1"
+           data-title="Logiciel Apprentissage calcul"
+           data-tag="Logiciel · 2025"
+           data-desc="Création d'une application permettant l'apprentissage des mathématiques pour les enfants : addition, soustraction, multiplication et division, avec niveaux de difficulté progressifs."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-robot"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Logiciel · 2025</p>
           <h3 class="project-title">Logiciel Apprentissage calcul</h3>
-          <p class="project-desc">
-            Création d’une application permettant l’apprentissage des mathématiques (addition, soustraction, multiplication et division).
-          </p>
+          <p class="project-desc">Création d'une application permettant l'apprentissage des mathématiques (addition, soustraction, multiplication et division).</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-java"></i> C#</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">RIDAE</span> Répondre aux incidents et aux demandes d’assistance et d’évolution</span>
+            <span class="comp-badge"><span class="comp-num">MDUS</span> Mettre à disposition des utilisateurs un service informatique</span>
+            <span class="comp-badge"><span class="comp-num">ODP</span> Organiser son développement professionnel</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-2">
+      <!-- ── Projet 8 ── -->
+      <div class="project-card reveal reveal-delay-2"
+           data-title="CSS Zen Garden"
+           data-tag="Web · 2024"
+           data-desc="Participation au développement et à la mise en forme du site web CSS Zen Garden. Création d'un thème original en CSS pur sans modification du HTML, démontrant la puissance du CSS."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-controller"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Web · 2024</p>
           <h3 class="project-title">CSS Zen Garden</h3>
-          <p class="project-desc">
-            Participation au développement et à la mise en forme du site web CSS Zen Garden.
-          </p>
+          <p class="project-desc">Participation au développement et à la mise en forme du site web CSS Zen Garden.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-html"></i> HTML</span>
+            <span class="lang-badge"><i class="bi bi-filetype-css"></i> CSS</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">DPLO</span> Développer la présence en ligne de l’organisation</span>
+            <span class="comp-badge"><span class="comp-num">ODP</span> Organiser son développement professionnel</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-3">
+      <!-- ── Projet 9 ── -->
+      <div class="project-card reveal reveal-delay-3"
+           data-title='Site HTML "Publicité"'
+           data-tag="Web · 2024"
+           data-desc="Création d'un site web pour présenter un produit et le vendre. Conception d'une landing page efficace avec argumentaire de vente, galerie produit et formulaire de contact."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-tools"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Web · 2024</p>
           <h3 class="project-title">Site HTML "Publicité"</h3>
-          <p class="project-desc">
-            Création d’un site web pour présenter un produit et le vendre.
-          </p>
+          <p class="project-desc">Création d'un site web pour présenter un produit et le vendre.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-html"></i> HTML</span>
+            <span class="lang-badge"><i class="bi bi-filetype-css"></i> CSS</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">DPLO</span> Développer la présence en ligne de l’organisation</span>
+            <span class="comp-badge"><span class="comp-num">TMP</span> Travailler en mode projet</span>
+          </div>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-3">
+      <!-- ── Projet 10 ── -->
+      <div class="project-card reveal reveal-delay-3"
+           data-title="Application Agenda"
+           data-tag="Logiciel · 2025"
+           data-desc="Application permettant de gérer des évènements en rapport à des dates. Fonctionnalités de création, modification et suppression d'évènements avec vue calendrier et rappels."
+           data-images="">
         <div class="project-img-placeholder">
           <i class="bi bi-tools"></i>
         </div>
         <div class="project-body">
           <p class="project-tag">Logiciel · 2025</p>
           <h3 class="project-title">Application Agenda</h3>
-          <p class="project-desc">
-            Application permettant de gérer des évenement en rapport a des dates.
-          </p>
+          <p class="project-desc">Application permettant de gérer des évènements en rapport à des dates.</p>
+          <div class="project-langs">
+            <span class="lang-badge"><i class="bi bi-filetype-java"></i> C#</span>
+          </div>
+          <div class="project-comps">
+            <span class="comp-badge"><span class="comp-num">GPI</span> Gèrer le patrimoine informatique</span>
+            <span class="comp-badge"><span class="comp-num">TMP</span> Travailler en mode projet</span>
+          </div>
         </div>
       </div>
 
@@ -203,36 +372,19 @@
 <!-- ═══ À PROPOS ═══ -->
 <section id="apropos">
   <div class="reveal">
-    <h2 class="section-title">Qui<br>suis-je ?</h2>
+    <h2 class="section-title">Qui suis-je ?</h2>
     <div class="section-divider"></div>
   </div>
 
   <div class="about-grid">
-    <!-- Colonne gauche — bio -->
     <div class="reveal reveal-delay-1">
-      <!--
-        ╔══════════════════════════════════════════════════════════════╗
-        ║  ZONE D'ÉDITION — PHOTO & BIO                              ║
-        ║  Remplace la div placeholder par :                         ║
-        ║  <img src="photo.jpg" alt="Maxence BILLON" class="about-photo"> ║
-        ╚══════════════════════════════════════════════════════════════╝
-      -->
       <div class="about-photo-placeholder">
         <i class="bi bi-person"></i>
       </div>
-
       <div class="about-bio">
         <p>
           Bonjour ! Je suis <strong style="color:var(--text)">Maxence BILLON</strong>, étudiant en BTS SIO option SLAM
           au Lycée Sidoine Apollinaire, passionné par le développement d'applications et les solutions logicielles.
-        </p>
-        <p>
-          J'aime concevoir des interfaces soignées et construire des architectures back-end solides.
-          En dehors du code, je m'intéresse à la photographie et à la musique électronique.
-        </p>
-        <p>
-          Actuellement à la recherche d'un stage ou d'une alternance pour mettre en pratique mes compétences
-          et continuer d'apprendre au sein d'une équipe dynamique.
         </p>
       </div>
     </div>
@@ -243,17 +395,40 @@
 <footer>
   <span>© 2025 Maxence BILLON — Portfolio 2024 - 2026</span>
   <div class="footer-socials">
-    <!-- Remplace # par tes vraies URLs -->
     <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
     <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
     <a href="#" title="Email"><i class="bi bi-envelope"></i></a>
   </div>
 </footer>
 
+<!-- ═══ PROJECT MODAL ═══ -->
+<div id="modal-overlay" aria-hidden="true">
+  <div id="modal-box">
+    <div class="modal-images">
+      <div class="modal-img-track" id="modal-img-track"></div>
+      <button class="modal-img-prev" id="modal-prev"><i class="bi bi-chevron-left"></i></button>
+      <button class="modal-img-next" id="modal-next"><i class="bi bi-chevron-right"></i></button>
+      <div class="modal-img-dots" id="modal-dots"></div>
+    </div>
+    <div class="modal-meta">
+      <p class="modal-section-label">Langages</p>
+      <div class="modal-langs" id="modal-langs"></div>
+      <p class="modal-section-label" style="margin-top:.8rem;padding-top:.8rem;border-top:1px solid var(--border)">Compétences</p>
+      <div class="modal-comps" id="modal-comps"></div>
+    </div>
+    <div class="modal-header-block">
+      <p class="modal-tag" id="modal-tag"></p>
+      <h2 class="modal-title" id="modal-title"></h2>
+    </div>
+    <div class="modal-desc-block">
+      <p class="modal-desc" id="modal-desc"></p>
+    </div>
+    <button class="modal-close" id="modal-close" aria-label="Fermer"><i class="bi bi-x"></i></button>
+  </div>
+</div>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom Scripts -->
 <script src="script.js"></script>
-
 </body>
 </html>
