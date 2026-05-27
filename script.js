@@ -30,7 +30,8 @@ bars.forEach(b => barObserver.observe(b));
   const closeBtn   = document.getElementById('modal-close');
   const modalTag   = document.getElementById('modal-tag');
   const modalTitle = document.getElementById('modal-title');
-  const modalDesc  = document.getElementById('modal-desc');
+  const modalContext = document.getElementById('modal-context');
+  const modalBilan   = document.getElementById('modal-bilan');
   const modalLangs = document.getElementById('modal-langs');
   const modalComps = document.getElementById('modal-comps');
   const track      = document.getElementById('modal-img-track');
@@ -44,7 +45,11 @@ bars.forEach(b => barObserver.observe(b));
   function openModal(card) {
     modalTag.textContent   = card.dataset.tag   || '';
     modalTitle.textContent = card.dataset.title || '';
-    modalDesc.textContent  = card.dataset.desc  || '';
+    function formatText(str) {
+      return (str || '').split('\\n\\n').map(p => `<p>${p.replace(/\\n/g, '<br>')}</p>`).join('');
+    }
+    modalContext.innerHTML = formatText(card.dataset.context);
+    modalBilan.innerHTML   = formatText(card.dataset.bilan);
 
     const srcLangs = card.querySelector('.project-langs');
     const srcComps = card.querySelector('.project-comps');
@@ -85,13 +90,17 @@ bars.forEach(b => barObserver.observe(b));
     overlay.classList.add('open');
     document.body.classList.add('modal-active');
     document.body.style.overflow = 'hidden';
+    startAutoRotate();
   }
 
   function closeModal() {
+    stopAutoRotate();
     overlay.classList.remove('open');
     document.body.classList.remove('modal-active');
     document.body.style.overflow = '';
   }
+
+  let autoTimer = null;
 
   function updateCarousel() {
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -102,8 +111,26 @@ bars.forEach(b => barObserver.observe(b));
     dotsWrap.style.display = single ? 'none' : 'flex';
   }
 
-  prevBtn.addEventListener('click', e => { e.stopPropagation(); currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateCarousel(); });
-  nextBtn.addEventListener('click', e => { e.stopPropagation(); currentSlide = (currentSlide + 1) % totalSlides; updateCarousel(); });
+  function startAutoRotate() {
+    stopAutoRotate();
+    if (totalSlides <= 1) return;
+    autoTimer = setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }, 3500);
+  }
+
+  function stopAutoRotate() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  }
+
+  /* Pause on hover */
+  const modalBox = document.getElementById('modal-box');
+  modalBox.addEventListener('mouseenter', stopAutoRotate);
+  modalBox.addEventListener('mouseleave', () => { if (document.getElementById('modal-overlay').classList.contains('open')) startAutoRotate(); });
+
+  prevBtn.addEventListener('click', e => { e.stopPropagation(); stopAutoRotate(); currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; updateCarousel(); startAutoRotate(); });
+  nextBtn.addEventListener('click', e => { e.stopPropagation(); stopAutoRotate(); currentSlide = (currentSlide + 1) % totalSlides; updateCarousel(); startAutoRotate(); });
 
   document.querySelectorAll('.project-card').forEach(card => {
     card.style.cursor = 'pointer';
